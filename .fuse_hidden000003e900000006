@@ -1,0 +1,37 @@
+\chapter{Project Statement}
+
+\section{Problem Statement}
+To develop a tool which can be used for automated social engineering attack on users of social networking sites using profile hijacking and man in the middle attack. Also test the tool via modified version of Turing test at basic conversation level 
+
+\section{Explanation}
+\\ \\
+Following is an example.
+\\
+Let’s say we have two marks (targets)
+Alice (Human) - aliceHuman and Bob (Human) - bobHuman
+\\
+We make two profiles both run by bots. The highlight is both bots hijack the profiles of marks namely alice and bob.
+\\ \\
+So aliceBot’s profile is similar to  aliceHumans profile and bobBot's profile is simlar to bobBot's profile. aliceBot sends a friend request to bobHuman. bobBot sends a friend request to aliceHuman. So now, aliceHuman is a friend of bobBot and bobHuman is a friend of aliceBot. Also, bobBot and aliceBot can exchange information outside of facebook to each other.
+\\ \\
+So now let’s say, bobHuman and aliceHuman are online. Our bots start the conversation. Whatever is being passed to one of the Bot by one human, it is passed on to the other Bot and in turn passed on to the other human, i.e. two humans are having conversation through two bots but they think that they are talking to a human since the conversation sounds like a human (which it is).
+\\ \\
+After some amount of bonding between them our bots start modification...
+\\ \\
+\textbf{AliceHuman - bobBot : }"Hey how was the movie yesterday?"\\
+\textbf{botBot - aliceBot : }"Hey how was the movie yesterday? and hey btw whats your fav color?"\\
+\textbf{aliceBot - BobHuman : }"Hey how was the movie yesterday? and hey btw whats your fav color?"\\
+\\ \\
+\textbf{BobHuman - aliceBot : }"movie was great, and its blue btw, whats yours?"\\
+\textbf{aliceBot - bobBot : }"movie was great, you know my fav color is blue, what is yours?"\\
+\textbf{bobBot - AliceHuman : }"movie was great, you know my fav color is blue, what is yours?"\\
+\\ \\
+\textbf{AliceHuman - bobBot : }"mine is pink :)"\\
+\textbf{botBot - aliceBot : }"mine is pink :)"\\
+\textbf{aliceBot - BobHuman : }"mine is pink :)"\\
+\\ \\
+Notice how the conversation has been altered to make it unclear that no one asked each other about favorite color and yet both of them told us their favorite color. We got hold of two marks information without raising suspicion. 
+\\
+
+
+

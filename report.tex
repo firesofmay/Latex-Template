@@ -1,0 +1,52 @@
+%-----Main FIle------
+
+%CHANGE THESE ONLY IF YOU KNOW WHAT YOU DOING
+
+\documentclass[12pt,a4paper]{report}
+\usepackage[top=1.00in, bottom=1.00in, left=1.25in,right=1.00in]{geometry} % setting the page alignment with this package
+\usepackage[pdftex]{graphicx} %for embedding images
+%\usepackage[hyphens]{url} %for proper url entries
+\usepackage[dvips, bookmarks, colorlinks=false]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
+\usepackage[final]{pdfpages} %for embedding another pdf, remove if not required
+\usepackage{float} %used for figure placement with H as a parameter
+%\usepackage[hyphens]{url}
+%\usepackage{hyperref}
+\usepackage{pslatex} % for times new roman, old package, but works
+\usepackage{array} % for making text bold in table
+
+% Altering the Index Page Title
+\renewcommand{\contentsname}{\begin{center}\textsc{University Of Pune \\2011 - 2012}\\[1cm]Index\end{center}} 
+
+
+%GLOBAL SETTINGS OVER, DOCUMENT BEGINS
+\begin{document}
+
+%Renames "Bibliography" to "References" on ref page
+\renewcommand\bibname{References} 
+
+%FROM HERE YOUR PAGES START GETTING ADDED
+
+% inlcuding your title page
+\input{project/title.tex} 
+
+% includes the cover page
+\input{project/cover.tex} 
+
+
+%TABLE OF CONTENTS AND LIST OF FIGURES ARE AUTOMATICALLY ADDED BY FOLLOWING COMMANDS
+%ADD FIGURE OF TABLES IF YOU NEED TO, CHECK DOCUMENTATION
+\pagenumbering{roman} %numbering before main content starts
+\tableofcontents % adds Index Page
+\listoffigures % adds List of Figures
+
+\newpage
+\pagenumbering{arabic} %reset numbering to normal for the main content
+
+\input{project/introduction.tex} % adds the introduction page
+\input{project/literature-survey.tex} % adds the Literature Survey page
+\input{project/project-statement.tex} % adds the Project Statement page
+\input{project/sys-req.tex} % adds the System Requirements page
+\input{project/planning.tex} % adds the Scheduling and Planning page
+\input{project/ref.tex} % adds the References page
+
+\end{document}
